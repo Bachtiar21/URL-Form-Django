@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Data</title>
+    <link href="{% static 'presentation.png' %}" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+<style>
+    body{
+	background: rgb(213, 213, 231);
+	
+}
+</style>
+</head>
+<body>
+        <div class="card-body">
+          <div class="float-left">
+            <h5>Berikut adalah list data. </h5>
+          </div>
+    <div class="float-right">
+      <a href="http://127.0.0.1:8000/form/" class="btn btn-dark btn-sm"><b>[+] Tambah Pegawai</b></a>
+    </div>
+    <br>
+    <hr>
+
+<table class="table table-dark table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th> 
+      <th scope="col">Nama</th>
+      <th scope="col">Alamat</th>
+      <th scope="col">Tanggal Lahir</th>
+      <th scope="col">Email</th>
+      <th scope="col">Slug</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  {% for v in post %}
+    <tr>
+            <th scope="row">{{forloop.counter}}</th>
+            <td>{{v.nama}}</td>
+            <td>{{v.alamat}}</td>
+            <td>{{v.tgl_lahir}}</td>
+            <td>{{v.email}}</td>
+            <td>{{v.slug}}</td>
+      <td>
+          <a href="#"><span class="btn btn-success">Edit</span></a>
+          <a href="{% url 'form:delete' v.id %}"><span class="btn btn-danger">Delete</span></a>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+        </div>
+      </div>
+      </div>
+      </div>
+  
+    <br>
+
+    <br>
+
+   
+</body>
+</html>

@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+	Cosmix by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bachtiar Ramadhan</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}" />
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
+    <!--Responsive-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css'%}" />
+    <!--Animation-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css'%}" />
+    <!--Prettyphoto-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/prettyPhoto.css'%}" />
+    <!--Font-Awesome-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css'%}" />
+    <!--Owl-Slider-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.transitions.css'%}" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  [endif]-->
+  </head>
+
+  {% include "navbar.html" %}
+
+  <body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+    <!--Preloader-->
+    <div id="preloader">
+      <div id="pre-status">
+        <div class="preload-placeholder"></div>
+      </div>
+    </div>
+    <!--Slider-Start-->
+    <section id="slider">
+      <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div
+            class="item active"
+            style="background-image: url(images/Slider/01.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>{{p}}</h1>
+                  <h2>{{h2}}</h2>
+                  <p>
+                    {{Desc}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(images/Slider/02.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>{{p}}</h1>
+                  <h2>{{h2}}</h2>
+                  <p>
+                    {{Desc}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(images/Slider/03.jpg)">
+            <div class="carousel-caption container">
+              <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                  <h1>{{p}}</h1>
+                  <h2>{{h2}}</h2>
+                  <p>
+                    {{p}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="home-carousel-left" href="#home-carousel" data-slide="prev"
+            ><i class="fa fa-angle-left"></i
+          ></a>
+          <a class="home-carousel-right" href="#home-carousel" data-slide="next"
+            ><i class="fa fa-angle-right"></i
+          ></a>
+        </div>
+      </div>
+      <!--/#home-carousel-->
+    <div id="client">
+      <div class="container">
+        <div id="client-slider" class="owl-carousel">
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/1.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/2.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/3.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/4.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/5.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/6.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+          <div class="item client-logo">
+            <a href="#"
+              ><img src="{% static 'images/clients/7.png' %}" class="img-responsive" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact-Section-Start-->
+    <section id="contact">
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h2>CONTACT <span>US</span></h2>
+            <div class="line"></div>
+            <p>
+              <span><strong>L</strong></span
+              >orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad
+              minim veniam
+            </p>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="col-md-6 col-sm-6 contact-sec-1">
+            <h4>CONTACT IN<span>FO</span></h4>
+            <ul class="contact-form">
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <h6><strong>Address:</strong> No 123 , Wallstreet, India</h6>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <h6>
+                  <strong>Mail Us:</strong> <a href="#">Info@yourdomain.com</a>
+                </h6>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <h6><strong>Phone:</strong> +91 123-456-7890</h6>
+              </li>
+              <li>
+                <i class="fa fa-wechat"></i>
+                <h6>
+                  <strong>Website:</strong> <a href="#">www.Cosmix.com</a>
+                </h6>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <form
+              id="main-contact-form"
+              name="contact-form"
+              method="post"
+              action="#">
+              <div
+                class="row wow fadeInDown"
+                data-wow-duration="1000ms"
+                data-wow-delay="300ms">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required="required" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required="required" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required="required" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Enter your message"
+                  required="required"></textarea>
+              </div>
+              <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#"
+                >Send Now</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="bg-sec">
+        <div class="container">
+          <h2>LOOKING FORWARD TO <strong>HEARING </strong>FROM YOU!</h2>
+        </div>
+      </div>
+    </footer>
+    <footer id="footer-down">
+      <h2>Follow Us On</h2>
+      <ul class="social-icon">
+        <li class="facebook hvr-pulse">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+        </li>
+        <li class="twitter hvr-pulse">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li class="linkedin hvr-pulse">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li class="google-plus hvr-pulse">
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li class="youtube hvr-pulse">
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </li>
+        <li class="instagram hvr-pulse">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li class="behance hvr-pulse">
+          <a href="#"><i class="fa fa-behance"></i></a>
+        </li>
+      </ul>
+      <p>
+        &copy; Copyright 2016 Cosmix - Created By :
+        <a href="http://templatestock.co" target="_blank">Template Stock</a>
+      </p>
+    </footer>
+    <!--Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <!--Boostrap-Jquery-->
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <!--Preetyphoto-Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <!--NiceScroll-Jquery-->
+    <script type="text/javascript" src="{% static 'js/jquery.nicescroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/waypoints.min.js' %}"></script>
+    <!--Isotopes-->
+    <script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+    <!--Wow-Jquery-->
+    <script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+    <!--Count-Jquey-->
+    <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.inview.min.js' %}"></script>
+    <!--Owl-Crousels-Jqury-->
+    <script type="text/javascript" src="{% static 'js/owl.carousel.js' %}"></script>
+    <!--Main-Scripts-->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
+
+<!-- Hosting24 Analytics Code -->
+<script
+  type="text/javascript"
+  src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
